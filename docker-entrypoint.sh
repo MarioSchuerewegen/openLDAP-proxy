@@ -199,7 +199,7 @@ done
 # sed -i -r -e 's/#+\s+LDAP_ATTRIBUTE_OBJECTCLASS_MAPPING\s+END\s+#+/\n&/g' slapd.conf  # new line
 
 cp slapd.conf /etc/openldap/slapd.conf
-
+chmod 666 /etc/openldap/slapd.conf
 # echo -e "\nHOST bluepages.ibm.com\nPORT 636\nTLS_REQCERT ALLOW" >> /etc/openldap/ldap.conf
 cd
 
